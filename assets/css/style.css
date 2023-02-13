@@ -14,7 +14,7 @@ body{
 header{
     /*outline: 1px solid red;*/
     height: 22vh;
-    background-image: url(/assets/img/design1_image2.jpg);
+    background-image: url(../img/design1_image2.jpg);
     background-size: cover;
     background-position: 0 35%;
     margin-top: 9.5vh;
