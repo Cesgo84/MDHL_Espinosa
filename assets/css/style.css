@@ -6,45 +6,49 @@
 }
 
 body{
-    /*outline: 1px solid red;*/
     width: 80%;
     margin-left: 10%;
+    margin-right: 10%;
+    background: linear-gradient(45deg,rgb(95, 161, 153),rgb(248, 225, 46));
     }
 
 header{
-    /*outline: 1px solid red;*/
-    height: 22vh;
-    background-image: url(../img/design1_image2.jpg);
-    background-size: cover;
-    background-position: 0 35%;
-    margin-top: 9.5vh;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
-    /*outline: 1px solid red;*/
-    position: absolute;
-    top: 5px;
     font-style: italic;
     font-size: 4em;
     font-weight: normal;
 }
 
+#headerImage{
+    min-height: 21vh;
+    background-image: url(../img/design1_image2.jpg);
+    background-size: cover;
+    background-position: 0 35%;
+}
+
 nav{
-    /*outline: 1px solid red;*/
-    position: absolute;
-    top: 80px;  
-    right: 15%;
+    min-height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    z-index: 1;
 }
 
 nav a{
     display: inline;
     border: 2px solid black;
+
     padding: 5px 20px;
     background-color: rgb(68 , 114, 196);
     color: rgb(255, 255, 255);
     text-decoration: none;
-    font-size: 1.5rem; 
-    box-shadow: 3px 3px 0px rgb(153, 153, 153);
+    font-size: 1.2rem; 
+    box-shadow: 3px 3px 0px rgb(198, 72, 50);
 }
 
 a[href="#"]{
@@ -53,30 +57,9 @@ a[href="#"]{
 }
 
 main{
-    /*outline: 1px solid red;*/
-    position: relative;
-}
-
-aside{
-    /*outline: 1px solid red;*/
-    display: inline-block;
-    position: relative;
-    width: 20%;
-    left: 0;
-    margin: 0;
-    padding-top: 50px;
-}
-
-aside>img{
-    /*outline: 1px solid darkred;*/
-    display: block;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 25px;
-}
-
-.logo{
-    width: 60%;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
 }
 
 section{
@@ -85,26 +68,55 @@ section{
     padding: 3px;
     width: 100%;
     text-align: center;
+    font-family: sans-serif;
     font-size: 1.5rem;
+}  
+
+.container{
+    display: flex;
+}
+
+aside{
+  display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+aside>img{
+    width: 80%;
+}
+
+.sans-serif{
+    font-family: sans-serif;
+}
+
+section>h3,article>h3{
+    font-family: sans-serif;
+    font-weight: normal;
 }
 
 article{
-    /*outline: 1px solid red;*/
-    display: inline;
-    position: absolute;
-    padding: 50px;
-    top: 50px;
-    width: 80%;
-    height: 90%;
+  padding: 50px;
     font-size: 1.5rem;
+    width: 80%;
 }
 
-#articleAbout{
+.articleAbout{
     padding: 50px 100px 0 50px ;
     font-size: 1.3rem;
 }
 
-h3{
+#articleRules{
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+
+section>h3{
     line-height: 2;
 }
 
@@ -123,5 +135,9 @@ p{
 }
 
 footer{
- 
+    min-height: 5vh;
+    align-items: center;
 }
+
+/*.sans-serif>div li{*/
+/*    list-style-position: inside;*/
