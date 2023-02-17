@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comic Neue', cursive;
+    /*outline: 1px solid aquamarine;*/
 }
 
 body{
@@ -10,7 +11,7 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     background: linear-gradient(45deg,rgb(95, 161, 153),rgb(248, 225, 46));
-    }
+}
 
 header{
     min-height: 30vh;
@@ -42,7 +43,7 @@ nav{
 nav a{
     display: inline;
     border: 2px solid black;
-
+    border-radius: 5px;
     padding: 5px 20px;
     background-color: rgb(68 , 114, 196);
     color: rgb(255, 255, 255);
@@ -77,7 +78,7 @@ section{
 }
 
 aside{
-  display: flex;
+    display: flex;
     flex-direction: column;
     width: 20%;
     padding-top: 50px;
@@ -89,39 +90,122 @@ aside>img{
     width: 80%;
 }
 
-.sans-serif{
+.sans-serif, label, dd, dt ,.sans-serif>th,td, legend{
     font-family: sans-serif;
 }
 
 section>h3,article>h3{
     font-family: sans-serif;
     font-weight: normal;
-}
-
-article{
-  padding: 50px;
-    font-size: 1.5rem;
-    width: 80%;
-}
-
-.articleAbout{
-    padding: 50px 100px 0 50px ;
-    font-size: 1.3rem;
-}
-
-#articleRules{
-    width: 80%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-}
-
+} 
 
 section>h3{
     line-height: 2;
 }
 
+article{
+    padding: 50px;
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+fieldset{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 10px;
+}
+#first_name, #last_name {
+    width: 35%;
+}
+
+#streetaddress {
+    width: 80%;
+}
+
+form *{
+    margin: .5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.names_city{
+    display: flex;
+}
+
+.gender, .grade{
+    width: 50%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: transparent;
+    border-color: transparent;
+    margin: .5rem;
+}
+
+.grade{
+    width: 60%;
+}
+.articleAbout h3{
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-top: 1.5rem
+}
+
+.articleAbout p{
+    font-family: sans-serif;
+    margin-top: 1rem;
+}
+
+#articleRules *{
+    font-size: 1.5rem;
+    margin-top: .5rem;
+}
+
+#articleRules .sport{
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+#allplay-li{
+    text-indent: 10px;
+    margin-left: 70px;
+}
+
+.table p{
+    text-decoration: underline;
+}
+
+caption{
+    caption-side: bottom;
+    text-align: right;
+    font-size: 10px;
+    padding: .3rem;
+}
+
+th, td{
+    padding: .6rem;
+}
+
+.table dt{
+    font-weight: bolder;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.table dd{
+    text-indent: 80px;
+}
+
 .dates{
     font-style: italic;
+    font-weight: bolder;
+    margin-top: 4rem;
+}
+
+ol>li, ul>li{
+    list-style-position: inside;
 }
 
 h4{
@@ -131,13 +215,58 @@ h4{
 }
 
 p{
-    text-indent: 40px;
+    text-indent: 80px;
+}
+
+.school_maps{
+    width: 100%;
+}
+
+.table>h3 ,.school_maps>h3{
+    font-weight: bolder;
+}
+
+.container2{
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    border: 2px solid lightgrey;
+    border-radius: 25px 0;
+    background-color: ;
+    box-shadow: 15px 15px 15px rgb(153, 153, 153);
+}
+
+.map{
+    min-width: 360px;
+    min-height: 200px;
+}
+
+.map div, .map iframe{
+    width: 100%;
+}
+
+#e-signature{
+    width: 40%;
+}
+
+#enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orangered ;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+    box-shadow: 15px 15px 15px rgb(153, 153, 153);
+
 }
 
 footer{
     min-height: 5vh;
     align-items: center;
 }
-
-/*.sans-serif>div li{*/
-/*    list-style-position: inside;*/
